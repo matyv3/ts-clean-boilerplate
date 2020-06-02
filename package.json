@@ -1,0 +1,38 @@
+{
+  "name": "ts-clean-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev src/init.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.5.0",
+    "inversify": "^5.0.1",
+    "inversify-express-utils": "^6.3.2",
+    "module-alias": "^2.2.2",
+    "reflect-metadata": "^0.1.13",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.9.3",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node": "^14.0.6"
+  },
+  "_moduleAliases": {
+    "@types": "src/types.ts",
+    "@core": "src/core",
+    "@data": "src/data",
+    "@models": "src/models",
+    "@api": "src/api",
+    "@config": "src/config",
+    "@utils": "src/utils/index.ts",
+    "@exceptions": "src/exceptions/index.ts"
+  }
+}
