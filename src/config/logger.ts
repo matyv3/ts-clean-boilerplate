@@ -10,8 +10,8 @@ const logger = winston.createLogger({
     ),
     defaultMeta: { service: 'posts-service' },
     transports: [
-        new winston.transports.File({ filename: 'error.log', level: 'error' }),
-        new winston.transports.File({ filename: 'app.log' }),
+        new winston.transports.File({ filename: 'logs/error.log', level: 'error' }),
+        new winston.transports.File({ filename: 'logs/app.log' }),
         new winston.transports.Stream({
             stream: process.stderr,
             level: 'debug',
