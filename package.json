@@ -2,9 +2,11 @@
   "name": "ts-clean-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/init.js",
   "scripts": {
-    "start": "ts-node-dev src/init.ts"
+    "start": "ts-node-dev src/init.ts",
+    "prod": "tsc && node dist/init.js",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -26,13 +28,13 @@
     "@types/node": "^14.0.6"
   },
   "_moduleAliases": {
-    "@types": "src/types.ts",
-    "@core": "src/core",
-    "@data": "src/data",
-    "@models": "src/models",
-    "@api": "src/api",
-    "@config": "src/config",
-    "@utils": "src/utils/index.ts",
-    "@exceptions": "src/exceptions/index.ts"
+    "@types": "dist/types.js",
+    "@core": "dist/core",
+    "@data": "dist/data",
+    "@models": "dist/models",
+    "@api": "dist/api",
+    "@config": "dist/config",
+    "@utils": "dist/utils/index.js",
+    "@exceptions": "dist/exceptions/index.js"
   }
 }
