@@ -15,7 +15,6 @@ The project uses `.env` variables so you can create one from the `.env.example` 
 For running the project in development mode just run `npm start`
 
 ### Todo's
-- production build
 - controllers validation
 - unit tests
 - docs
